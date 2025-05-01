@@ -8,10 +8,17 @@ namespace DBMS_Project
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
-            ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Application.SetHighDpiMode(HighDpiMode.SystemAware);
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+
+            // Show the login form first
+            var loginForm = new Form3();
+            if (loginForm.ShowDialog() == DialogResult.OK)
+            {
+                // If login is successfu, show the battle form
+                Application.Run(new FormSearch());
+            }
         }
     }
 }

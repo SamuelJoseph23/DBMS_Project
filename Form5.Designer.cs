@@ -1,6 +1,6 @@
 ﻿namespace DBMS_Project
 {
-    partial class Form1
+    partial class Form5
     {
         private System.ComponentModel.IContainer components = null;
 
@@ -15,7 +15,7 @@
 
         private void InitializeComponent()
         {
-            comboBoxRealm = new ComboBox();
+            comboBoxGods = new ComboBox();
             buttonShowDetails = new Button();
             labelDetails = new Label();
             label1 = new Label();
@@ -24,23 +24,21 @@
             button1 = new Button();
             SuspendLayout();
             // 
-            // comboBoxRealm
+            // comboBoxGods
             // 
-            comboBoxRealm.Font = new Font("Tahoma", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            comboBoxRealm.FormattingEnabled = true;
-            comboBoxRealm.Items.AddRange(new object[] { "Asgard", "Midgard", "Jotunheim", "Vanaheim", "Alfheim", "Svartalfheim", "Niflheim", "Muspelheim", "Helheim" });
-            comboBoxRealm.Location = new Point(365, 100);
-            comboBoxRealm.Name = "comboBoxRealm";
-            comboBoxRealm.Size = new Size(200, 48);
-            comboBoxRealm.TabIndex = 0;
-            comboBoxRealm.SelectedIndexChanged += comboBoxRealm_SelectedIndexChanged;
+            comboBoxGods.Font = new Font("Segoe UI", 28F);
+            comboBoxGods.FormattingEnabled = true;
+            comboBoxGods.Location = new Point(359, 125);
+            comboBoxGods.Name = "comboBoxGods";
+            comboBoxGods.Size = new Size(200, 70);
+            comboBoxGods.TabIndex = 0;
             // 
             // buttonShowDetails
             // 
-            buttonShowDetails.Font = new Font("Tahoma", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            buttonShowDetails.Location = new Point(630, 100);
+            buttonShowDetails.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            buttonShowDetails.Location = new Point(610, 127);
             buttonShowDetails.Name = "buttonShowDetails";
-            buttonShowDetails.Size = new Size(211, 48);
+            buttonShowDetails.Size = new Size(250, 56);
             buttonShowDetails.TabIndex = 1;
             buttonShowDetails.Text = "Show Details";
             buttonShowDetails.UseVisualStyleBackColor = true;
@@ -58,45 +56,45 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Stencil", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = SystemColors.ButtonFace;
-            label1.Location = new Point(251, -4);
+            label1.ForeColor = SystemColors.ButtonHighlight;
+            label1.Location = new Point(174, 9);
             label1.Name = "label1";
-            label1.Size = new Size(422, 71);
+            label1.Size = new Size(551, 71);
             label1.TabIndex = 3;
-            label1.Text = "REALM-PEDIA";
+            label1.Text = "Norse god-pedia";
+            label1.Click += label1_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Tahoma", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = SystemColors.ButtonFace;
-            label2.Location = new Point(12, 99);
+            label2.Font = new Font("Stencil", 28F, FontStyle.Bold);
+            label2.ForeColor = SystemColors.ButtonHighlight;
+            label2.Location = new Point(22, 125);
             label2.Name = "label2";
-            label2.Size = new Size(306, 45);
+            label2.Size = new Size(313, 56);
             label2.TabIndex = 4;
-            label2.Text = "Choose a realm";
-            label2.Click += label2_Click;
+            label2.Text = "Select god:";
             // 
             // panel1
             // 
             panel1.BackColor = SystemColors.ButtonHighlight;
-            panel1.Location = new Point(-2, 70);
+            panel1.Location = new Point(2, 80);
             panel1.Name = "panel1";
-            panel1.Size = new Size(887, 10);
-            panel1.TabIndex = 6;
+            panel1.Size = new Size(873, 10);
+            panel1.TabIndex = 5;
             // 
             // button1
             // 
             button1.Font = new Font("Tahoma", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(647, 428);
+            button1.Location = new Point(655, 432);
             button1.Name = "button1";
             button1.Size = new Size(194, 48);
-            button1.TabIndex = 7;
+            button1.TabIndex = 23;
             button1.Text = "Main Menu";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // Form1
+            // Form5
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -108,16 +106,15 @@
             Controls.Add(label1);
             Controls.Add(labelDetails);
             Controls.Add(buttonShowDetails);
-            Controls.Add(comboBoxRealm);
-            ForeColor = SystemColors.ControlText;
-            Name = "Form1";
-            Text = "Form1";
-            Load += Form1_Load;
+            Controls.Add(comboBoxGods);
+            Name = "Form5";
+            Text = "Form5";
+            Load += Form5_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
-        private System.Windows.Forms.ComboBox comboBoxRealm;
+        private System.Windows.Forms.ComboBox comboBoxGods;
         private System.Windows.Forms.Button buttonShowDetails;
         private System.Windows.Forms.Label labelDetails;
         private Label label1;
@@ -126,3 +123,5 @@
         private Button button1;
     }
 }
+
+
